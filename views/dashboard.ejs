@@ -1,0 +1,197 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<!-- lanjutan navbar => buat tampilan active link di navbar side belum berhasil, jadi buat manual -->
+<div class="frame-menu">
+    <div class="dash-img" id="active">
+        <a href="/dashboard">
+            <img src="/img/dashboard.svg" alt="dashboard">
+        </a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="dash-img">
+        <a href="/cars">
+            <img src="/img/cars.svg" alt="cars">
+        </a>
+        <a href="/cars">Cars</a>
+    </div>
+</div>
+</div>
+<div class="nav-white">
+<div class="title-menu">
+    <h1><%= title_nav_B %></h1>
+</div>
+<div class="list-menu">
+    <h1><%= title_nav %></h1>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="content">
+    <div class="breadcrumb">
+        <h1><%= title %></h1>
+        <img src="img/arrow-right.svg" alt="arrow-right">
+        <p><%= title %></p>
+    </div>
+    <h1 class="title-h1"><%= title %></h1>
+    <div class="list-order">
+        <img src="img/line-blue.svg">
+        <h1>List Order</h1>
+    </div>
+
+    <!-- order table -->
+    <div class="list-table">
+        <table class="table table-borderless">
+            <thead>
+                <td style="text-align:center">No</td>
+                <td>
+                    User Email<img class="sort" src="img/sort.svg" alt="sort">
+                </td>
+                <td>Car<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Start Rent<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Finish Rent<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Price<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Status<img class="sort" src="img/sort.svg" alt="sort"></td>
+            </thead>
+            <tbody>
+                <td style="text-align:center">
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p><%= i %></p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>User Email</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Car</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Start Rent</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Finish Rent</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Price</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Status</p>
+                    <% } %>
+                </td>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- table navigation -->
+    <div class="table-nav">
+        <div class="limit-nav">
+            <p>Limit</p>
+            <img src="img/form-drop.svg" alt="form-drop">
+        </div>
+        <div class="jump-nav">
+            <p>Jump to page</p>
+            <img src="img/form-drop-2.svg" alt="form-drop-2">
+        </div>
+        <div class="go-nav">
+            <h1>Go</h1>
+        </div>
+        <div class="page-number">
+            <img src="img/page-number.svg" alt="page-number">
+        </div>
+    </div>
+
+    <div class="list-car">
+        <img src="img/line-blue.svg">
+        <h1>List Car</h1>
+    </div>
+    <!-- car table -->
+    <div class="list-table">
+        <table class="table table-borderless">
+            <thead>
+                <td style="text-align:center">No</td>
+                <td>
+                    Name<img class="sort" src="img/sort.svg" alt="sort">
+                </td>
+                <td>Category<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Price<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Start Rent<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Finish Rent<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Created at<img class="sort" src="img/sort.svg" alt="sort"></td>
+                <td>Updated at<img class="sort" src="img/sort.svg" alt="sort"></td>
+            </thead>
+            <tbody>
+                <td style="text-align:center">
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p><%= i %></p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Name</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Category</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Price</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Start Rent</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Finish Rent</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Created at</p>
+                    <% } %>
+                </td>
+                <td>
+                    <% for(let i = 1; i <= 10; i++) { %>
+                        <p>Updated at</p>
+                    <% } %>
+                </td>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- table navigation -->
+    <div class="table-nav">
+        <div class="limit-nav">
+            <p>Limit</p>
+            <img src="img/form-drop.svg" alt="form-drop">
+        </div>
+        <div class="jump-nav">
+            <p>Jump to page</p>
+            <img src="img/form-drop-2.svg" alt="form-drop-2">
+        </div>
+        <div class="go-nav">
+            <h1>Go</h1>
+        </div>
+        <div class="page-number">
+            <img src="img/page-number.svg" alt="page-number">
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>

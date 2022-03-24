@@ -1,0 +1,92 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<!-- lanjutan navbar => buat tampilan active link di navbar side belum berhasil, jadi buat manual -->
+<div class="frame-menu">
+    <div class="dash-img">
+        <a href="/dashboard">
+            <img src="/img/dashboard.svg" alt="dashboard">
+        </a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="dash-img" id="active">
+        <a href="/cars">
+            <img src="/img/cars.svg" alt="cars">
+        </a>
+        <a href="/cars">Cars</a>
+    </div>
+</div>
+</div>
+<div class="nav-white">
+<div class="title-menu">
+    <h1><%= title_nav_B %></h1>
+</div>
+<div class="list-menu">
+    <h1><%= title_nav %></h1>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="content">
+    <div class="breadcrumb">
+        <h1>Cars</h1>
+        <img src="img/arrow-right.svg" alt="arrow-right">
+        <h1>List Car</h1>
+        <img src="img/arrow-right.svg" alt="arrow-right">
+        <p><%= title %></p>
+    </div>
+    <h1 class="title-h1"><%= title %></h1>
+
+    <!-- form -->
+    <div class="form-add-new-car">
+        <div class="content-form row g-2 align-items-center">
+            <div class="col-auto">
+              <label for="nama" class="col-form-label">Nama<b style="color: red">*</b></label>
+            </div>
+            <div class="content-box col-auto">
+              <input type="name" id="nama" class="form-control" name="nama" placeholder="Nama">
+            </div>
+        </div>
+        <div class="content-form row g-2 align-items-center">
+            <div class="col-auto">
+              <label for="harga" class="col-form-label">Harga<b style="color: red">*</b></label>
+            </div>
+            <div class="content-box col-auto">
+              <input type="text" id="harga" class="form-control" name="harga" placeholder="Harga">
+            </div>
+        </div>
+        <div class="content-form row g-2 align-items-center">
+            <div class="col-auto">
+              <label for="foto" class="col-form-label" style=>Foto<b style="color: red">*</b></label>
+            </div>
+            <div class="content-box col-auto">
+                <input type="file" id="harga" class="form-control" name="foto" placeholder="Foto">
+                <small class="form-text text-muted text-left">File size max. 2MB</small>
+            </div>
+        </div>
+        <div class="content-h1">
+            <h1>Start Rent</h1>
+            <h1>-</h1>
+        </div>
+        <div class="content-h1">
+            <h1>Finish Rent</h1>
+            <h1>-</h1>
+        </div>
+        <div class="content-h1">
+            <h1>Created at</h1>
+            <h1>-</h1>
+        </div>
+        <div class="content-h1">
+            <h1>Updated at</h1>
+            <h1>-</h1>
+        </div>
+    </div>
+
+    <!-- button -->
+    <div class="button-form">
+        <a href="/cars"><img src="/img/cancel.svg" alt="cancel"></a>
+        <a href="/cars"><img src="/img/save.svg" alt="save"></a>
+    </div>
+</div>
+<%- include('partials/footer') %>

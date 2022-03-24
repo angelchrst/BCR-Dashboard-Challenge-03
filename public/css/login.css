@@ -1,0 +1,73 @@
+body {
+    background-image: url('/img/login-page.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Helvetica';
+}
+
+.login {
+    position: absolute;
+    width: 482px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+
+.login .logo {
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 55px;
+    top: 142px;
+    background: #CFD4ED;
+}
+
+.login .welcome-title {
+    position: absolute;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    top: 208px;
+    left: 55px;
+}
+
+.login .form-content {
+    position: absolute;
+    width: 370px;
+    height: auto;
+    left: 55px;
+    top: 276.07px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.login .form-content input {
+    margin-top: 9px;
+    margin-bottom: 16px;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #A5A5A5;
+}
+
+.login .form-content .button-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    position: absolute;
+    width: 370px;
+    height: 36px;
+    margin-top: 31.75px;
+    background: #0D28A6;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}

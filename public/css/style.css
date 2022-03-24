@@ -1,0 +1,534 @@
+body, h1 {
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+header .nav-top {
+    position: absolute;
+    width: 1280px;
+    height: 70px;
+    left: 70px;
+    right: 0;
+    top: 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header .nav-top .logo {
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 24px;
+    top: 18px;
+    background: #CFD4ED;
+}
+
+header .nav-top .icon-menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 244px;
+    top: 23px;
+}
+
+header .nav-top .nav-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 245px;
+    height: 36px;
+    left: 837px;
+    top: 17px;
+}
+
+header .nav-top .nav-search .box-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    width: 174px;
+    height: 36px;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8A8A8A;
+}
+
+header .nav-top .nav-search .box-search > input {
+    border: none;
+    outline: none;
+    padding-left: 8px;
+}
+
+header .nav-top .nav-search .button-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    width: 71px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+    font-weight: 700;
+    color:#0D28A6;
+}
+
+header .nav-top .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 143px;
+    height: 38px;
+    left: 1110px;
+    right: 24px;
+    top: 16px;
+}
+
+header .nav-top .profile > p {
+    position: absolute;
+    width: 65px;
+    height: 20px;
+    left: 46px;
+    top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+header .nav-top .profile .dropdown {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 119px;
+    top: 7px;
+}
+
+header .nav-side {
+    position: absolute;
+    width: 290px;
+    height: 902px;
+    left: 0px;
+    top: -1px;
+}
+
+header .nav-side .nav-blue {
+    position: absolute;
+    left: 0%;
+    right: 75.86%;
+    top: 0%;
+    bottom: 0%;
+    background: #0D28A6;
+}
+
+header .nav-side .nav-blue .square {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 18px;
+    top: 18px;
+    background: #CFD4ED;
+}
+
+header .nav-side .nav-blue .frame-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 70px;
+    height: 128px;
+    left: 0px;
+    top: 70px;
+}
+
+header .nav-side .nav-blue .frame-menu .dash-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 23px;
+    position: static;
+    width: 70px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+}
+
+#active {
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+header .nav-side .nav-blue .frame-menu .dash-img a {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+header .nav-side .nav-blue img:last-child {
+    margin-top: 0;
+}
+
+header .nav-side .nav-white {
+    position: absolute;
+    left: 24.14%;
+    right: 0%;
+    top: 7.76%;
+    bottom: 0.22%;
+}
+
+header .nav-side .nav-white .title-menu {
+    position: absolute;
+    width: 220px;
+    height: 42px;
+    left: 24px;
+    top: 23px;
+}
+
+header .title-menu h1 {
+    font-weight: 700;
+    color: #8A8A8A;
+    left: 24px;
+}
+
+header .nav-side .nav-white .list-menu {
+    position: static;
+    margin-top: 73px;
+    width: 220px;
+    height: 42px;
+    padding: 11px 24px;
+    background: #CFD4ED;
+}
+
+header .list-menu h1 {
+    font-weight: 700;
+    color: #151515;
+    left: 24px;
+}
+
+.content {
+    position: absolute;
+    left: 290px;
+    top: 70px;
+    width: 1060px;
+    height: auto;
+    background: #F4F5F7;   
+}
+
+.content .breadcrumb {
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 25px;
+    top: 32px;
+}
+
+.content .breadcrumb > h1 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.content .breadcrumb > p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.content .breadcrumb > img {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.content .title-h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+    margin-top:74px;
+}
+
+.content .list-order {
+    margin-top: 24px;
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    margin-left: 25px;
+}
+
+.content .list-order > img {
+    width: 4px;
+    height: 24px;
+}
+
+.content .list-order > h1 {
+    float: right;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.content .list-table table {
+    margin-left: 25px;
+    margin-top: 72px;
+    width: 1010px;
+    background-color: white;
+    border: 1px solid none;
+    border-radius: 2px;
+}
+
+.content .list-table table thead {
+    background-color: rgba(207, 212, 237, 1);
+    font-weight: 700;
+}
+
+.content .list-table table thead td > img {
+    float: right;
+}
+
+.content .table-nav {
+    display: flex;
+    flex-direction: row;
+    width: 1010px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.content .table-nav .limit-nav{
+    margin-left: 25px;
+}
+
+.content .table-nav .jump-nav {
+    margin-left: 24px;
+} 
+
+.content .table-nav .go-nav {
+    width: 43px;
+    height: 36px;
+    margin-top: 34px;
+    background: #0D28A6;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.content .table-nav .go-nav > h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 8px 8px;
+}
+
+.content .table-nav .page-number {
+    margin-top: 33px;
+    margin-left: 550px;
+}
+
+.content .list-car {
+    margin-top: 24px;
+    position: absolute;
+    width: 65px;
+    height: 24px;
+    margin-left: 25px;
+}
+
+.content .list-car > img {
+    width: 4px;
+    height: 24px;
+}
+
+.content .list-car > h1 {
+    float: right;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.content .title-button-car {
+    display: inline-flex;
+}
+
+.content .title-button-car > h1 {
+    margin-right: 800px;
+}
+
+.content .title-button-car > a img {
+    margin-top: 74px;
+}
+
+.content .button-category {
+    margin-top: 24px;
+    margin-left: 8px;
+    display: inline-flex;
+}
+
+.content .button-category img {
+    margin-left: 16px;
+}
+
+.content .cars-card {
+    width: 320px;
+    height: 482px;
+    margin-left: 25px;
+    margin-top: 24px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.content .cars-card .card-img-top {
+    width: 270px;
+    height: 160px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.content .cars-card .card-body {
+    padding: 24px;
+}
+
+.content .cars-card .card-body .bold-h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.content .cars-card .card-body-text {
+    display: inline-flex;
+    width: 303px;
+    height: 20px;
+    margin-top: 16px;
+}
+
+.content .cars-card .card-body-text img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.content .cars-card .button-card {
+    display: inline-flex;
+    margin-left: 8px;
+    margin-top: 24px;
+}
+
+.content .cars-card .button-card img {
+    width: 120px;
+}
+
+.content .cars-card .button-card img:last-child {
+    margin-left: 16px;
+}
+
+.content .form-add-new-car {
+    width: 1010px;
+    height: 350px;
+    background: white;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+.content .form-add-new-car .content-form {
+    padding-top: 16px;
+    padding-left: 25px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.content .form-add-new-car .content-form label {
+    width: 147px;
+}
+
+.content .form-add-new-car .content-form input {
+    width: 339px;
+    height:auto;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+    color: #8A8A8A;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.content .form-add-new-car .content-form .content-box {
+    margin-left: 4px;
+}
+
+.content .form-add-new-car .content-h1 h1 {
+    display: inline-flex;
+    margin-left: 25px;
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.content .form-add-new-car .content-h1 h1:first-child {
+    width: 147px;
+}
+
+.content .form-add-new-car .content-h1 h1:last-child {
+    margin-left: 8px;
+}
+
+.content .button-form {
+    display: inline-flex;
+    margin-left: 9px;
+}
+
+.content .button-form img {
+    margin-left: 16px;
+    margin-top: 282px;
+    margin-bottom: 40px;
+}
+
+.myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    color: #000;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+          input {
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+  }

@@ -1,0 +1,86 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<!-- lanjutan navbar => buat tampilan active link di navbar side belum berhasil, jadi buat manual -->
+<div class="frame-menu">
+    <div class="dash-img">
+        <a href="/dashboard">
+            <img src="/img/dashboard.svg" alt="dashboard">
+        </a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="dash-img" id="active">
+        <a href="/cars">
+            <img src="/img/cars.svg" alt="cars">
+        </a>
+        <a href="/cars">Cars</a>
+    </div>
+</div>
+</div>
+<div class="nav-white">
+<div class="title-menu">
+    <h1><%= title_nav_B %></h1>
+</div>
+<div class="list-menu">
+    <h1><%= title_nav %></h1>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="content">
+    <div class="breadcrumb">
+        <h1><%= title %></h1>
+        <img src="img/arrow-right.svg" alt="arrow-right">
+        <p><%= title_nav %></p>
+    </div>
+    
+    <div class="title-button-car">
+        <h1 class="title-h1"><%= title_nav %></h1>
+        <a href="/add-new-car">
+            <img src="/img/add-new-car.svg" alt="add-new-car">
+        </a>
+    </div>
+
+    <div class="button-category">
+        <img src="/img/button-all.svg" alt="button-all">
+        <img src="/img/button-small.svg" alt="button-small">
+        <img src="/img/button-medium.svg" alt="button-medium">
+        <img src="/img/button-large.svg" alt="button-large">
+    </div>
+
+    <div class="cars-table">
+        <table>
+            <% for(let i = 0; i < 3; i++ ) { %>
+            <tr>
+                <% for(let i = 0; i < 3; i++) { %>
+                    <td>
+                        <div class="cars-card card">
+                            <img src="/img/car.png" class="card-img-top" alt="car">
+                            <div class="card-body">
+                                <h1>Nama/Tipe Mobil</h1>
+                                <h1 class="bold-h1">Rp 430.000 / hari</h1>
+                                <div class="card-body-text">
+                                    <img src="/img/key.svg" alt="key">
+                                    <h1>Start rent - Finish rent</h1>
+                                </div>
+                                <div class="card-body-text">
+                                    <img src="/img/clock.svg" alt="clock">
+                                    <h1>Updated at 4 Apr 2022, 09.00</h1>
+                                </div>
+                                <div class="button-card">
+                                    <img class="delete" src="/img/delete.svg" alt="delete">
+                                    <a href="/add-new-car"><img src="/img/edit.svg" alt="edit"></a>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                <% } %>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
+<%- include('partials/footer') %>
