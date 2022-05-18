@@ -216,11 +216,10 @@ header .list-menu h1 {
 
 .content {
     position: absolute;
-    overflow: auto;
     left: 290px;
     top: 70px;
-    /*width: 1060px;*/
-    height: 100%;
+    width: 1060px;
+    height: auto;
     background: #F4F5F7;   
 }
 
